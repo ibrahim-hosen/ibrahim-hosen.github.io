@@ -339,6 +339,7 @@ button.slick-custom-next.slick-arrow{
     box-shadow: 0 0.125rem 0.48rem rgb(0 0 0 / 31%);
 }
 .card-body img {
+    width: 100%;
     height: 150px;
     object-fit: contain;
     transition: 0.9s;
@@ -352,10 +353,13 @@ button.slick-custom-next.slick-arrow{
     margin: 50px 0px;
 }
 .card-body a.view-all-btn {
-    background: var(--bs-success);
+    background: #198754;
     padding: 7px 30px;
     border-radius: 50px;
     color: #fff;
+}
+.text-success {
+    color: #198754 !important;
 }
 /***************Category product end***************/
 /***************Banner section***************/
@@ -379,7 +383,7 @@ section.banner .item {
     color: #000000;
 }
 .text a.order-now {
-    background: var(--bs-success);
+    background: #198754;
     padding: 7px 30px;
     border-radius: 50px;
     color: #fff;
