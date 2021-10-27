@@ -2,3 +2,6 @@
 @import url('_header.css');
 @import url('_home.css');
 @import url('_footer.css');
+body{
+	background: #000;
+}
