@@ -1,0 +1,26 @@
+/*Footer section*/
+ul.footer-list {
+    padding: 0 18px;
+}
+ul.footer-list li {
+    list-style: initial;
+}
+ul.footer-list li a{
+	color: #000000;
+	transition: 0.5s;
+}
+ul.footer-list li a:hover{
+    color: #0f5132;
+    padding-left: 7px;
+}
+h4.mt-3 {
+    font-size: 25px;
+}
+p.mt-4p {
+    font-size: 16px;
+    color: #000000;
+}
+h4.mt-3h4 {
+    font-size: 25px;
+}
+/*Footer section*/
