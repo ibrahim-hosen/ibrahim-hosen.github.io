@@ -879,11 +879,11 @@ span.actc-header-icon-text {
 	overflow: hidden;
 
 }
-/*.actc-work-portfolio-image-item img{
+.actc-work-portfolio-image-item img{
 	width: 100%;
 	height: 100%;
 	transition: 0.9s;
-}*/
+}
 .actc-work-portfolio-image-item:hover img{
 	transform: scale(1.2);
 	transition: .9s;
