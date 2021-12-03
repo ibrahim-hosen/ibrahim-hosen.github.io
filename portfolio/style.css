@@ -91,7 +91,7 @@
 /*====_banner.css========*/
 .actc-banner-section-image{
 	position: relative;
-	background-image: url(../images/banner.jpg);
+	background-image: url(assets/images/banner.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
