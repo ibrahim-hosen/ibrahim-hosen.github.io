@@ -1127,6 +1127,17 @@ button.slick-custom-next.slick-arrow:hover{
 	    height: 100%;
 	    margin: 0 auto;
 	}
+	.actc-acquaintance-text p {
+	    padding-left: 0;
+	    padding-bottom: 15px;
+	}
+	.actc-fastest-serices-items p br {
+   	 	display: none;
+	}
+	.actc-nav-menu {
+	    height: 162px;
+	    margin: 8px 0px;
+	}
 }
 @media(max-width: 525px){
 	.actc-about-me-addres{
