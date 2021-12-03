@@ -1425,19 +1425,13 @@ button.slick-custom-next.slick-arrow:hover{
 		padding: 10px 15px !important;
 	}
 }
-@media(max-width: 900px){
-	/*.actc-work-portfolio-image-item img {
-	    width: 100%;
-	    max-width: 350px;
-	    height: 180px;
-	}*/
-}
 @media(max-width: 767px){
-	/*.actc-work-portfolio-image-item img {
-	    width: 100%;
-	    max-width: 350px;
-	    height: 180px;
-	}*/
+	.actc-fastest-serices-items p {
+	    font-size: 16px;;
+	}
+	p.actc-clients-text-p {
+    	padding-bottom: 27px;
+	}
 	.actc-about-me {
 	    display: block;
 	    margin-left: 0;
