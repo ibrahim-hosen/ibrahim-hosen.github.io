@@ -873,11 +873,11 @@ button.slick-custom-next.slick-arrow:hover{
 	.actc-work-portfolio-image-items {
 		grid-template-areas: "box1 box2";
 	}
-	.actc-work-portfolio-image-item img {
+	/*.actc-work-portfolio-image-item img {
 	    width: 100%;
 	    max-width: inherit;
 	    height: 100% !important;
-	}
+	}*/
 	.actc-work-portfolio-image-text h3{
 		font-size: 20px !important;
 		line-height: inherit;
@@ -897,18 +897,18 @@ button.slick-custom-next.slick-arrow:hover{
 	}
 }
 @media(max-width: 900px){
-	.actc-work-portfolio-image-item img {
+	/*.actc-work-portfolio-image-item img {
 	    width: 100%;
 	    max-width: 350px;
 	    height: 180px;
-	}
+	}*/
 }
 @media(max-width: 767px){
-	.actc-work-portfolio-image-item img {
+	/*.actc-work-portfolio-image-item img {
 	    width: 100%;
 	    max-width: 350px;
 	    height: 180px;
-	}
+	}*/
 	.actc-about-me {
 	    display: block;
 	    margin-left: 0;
@@ -1032,8 +1032,8 @@ button.slick-custom-next.slick-arrow:hover{
 	}
 	.actc-work-portfolio-image-item.grid-item {
 		width: 100%;
-	    max-width: 350px;
-	    height: 229px;
+	    max-width: 420px;
+	    height: 100%;
 	    margin: 0 auto;
 	}
 }
@@ -1041,7 +1041,8 @@ button.slick-custom-next.slick-arrow:hover{
 	.actc-fastest-serices-items,
 	.actc-project-lest-items,
 	.actc-update-blog-items{
-	    max-width: 350px;
+		width: 100%;
+	    max-width: 420px;
 	    height: auto;
 	    margin: 0 auto;
 	    margin-top: 30px;
@@ -1122,8 +1123,8 @@ button.slick-custom-next.slick-arrow:hover{
 	}
 	.actc-work-portfolio-image-item.grid-item {
 		width: 100%;
-	    max-width: 350px;
-	    height: 229px;
+	    max-width: 420px;
+	    height: 100%;
 	    margin: 0 auto;
 	}
 }
@@ -1162,6 +1163,25 @@ button.slick-custom-next.slick-arrow:hover{
 	}
 	button.slick-custom-next.slick-arrow {
    	 left: 36%;
+	}
+}
+@media(max-width: 355px){
+	.actc-work-portfolio-image-text h3,
+	.actc-work-portfolio-image-text h5{
+		font-size: 18px !important;
+		line-height: 16px;
+	}
+	.actc-work-portfolio-image-text p{
+		font-size: 16px;
+	}
+	.actc-work-portfolio-image-icon a {
+    	font-size: 15px;
+	}
+	.actc-work-portfolio-image-icon {
+    	padding: 9px 14px !important;
+	}
+	.actc-work-portfolio-image-text{
+		padding: 10px 15px;
 	}
 }
 /*==================Responcib End==========================*/
