@@ -6,8 +6,6 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-left: -8px;
-    margin-right: -8px;
 }
 .actc-about-me-addres {
     width: 33.33%;
@@ -533,7 +531,6 @@ span.actc-header-icon-text {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-left: -15px;
     margin-right: -15px;
 }
 .actc-about-me-img {
@@ -563,8 +560,6 @@ span.actc-header-icon-text {
 }
 .actc-about-me-area {
     width: 75%;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 .actc-about-me-items {
     padding-top: 20px;
@@ -1341,7 +1336,7 @@ button.slick-custom-next.slick-arrow:hover{
 	    padding-bottom: 0;
 	}
 	body{
-		font-size: 15px;
+		font-size: 16px;
 		line-height: 23px;
 	}
 	.actc-update-blog-text h2 {
@@ -1350,6 +1345,9 @@ button.slick-custom-next.slick-arrow:hover{
 	}
 }
 @media(max-width: 991px){
+	.actc-about-me-addres a {
+	    padding: 7px 2px;
+	}
 	.actc-project-lest-items,
 	.actc-update-blog-items{
 		margin-bottom: 25px;
@@ -1533,6 +1531,9 @@ button.slick-custom-next.slick-arrow:hover{
 	}
 }
 @media(max-width: 675px){
+	.actc-acquaintance-icon{
+		margin-bottom: 10px;
+	}
 	.actc-clients-items.slick-list,
 	.actc-clients-txt{
 	    display: block !important;
@@ -1665,13 +1666,9 @@ button.slick-custom-next.slick-arrow:hover{
 	.actc-fastest-serices-items p br {
    	 	display: none;
 	}
-	.actc-nav-menu-area.opener {
-	    position: absolute;
-	    left: 0;
-	    bottom: 0;
-	    top: 0;
-	    height: 100vh;
-	    width: 100%;
+	.actc-nav-menu {
+	    height: 162px;
+	    margin: 8px 0px;
 	}
 }
 @media(max-width: 525px){

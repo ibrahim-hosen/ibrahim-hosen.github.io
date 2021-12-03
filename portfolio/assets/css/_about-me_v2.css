@@ -2,13 +2,9 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-left: -8px;
-    margin-right: -8px;
 }
 .actc-about-me-addres {
     width: 33.33%;
-    padding-left: 4px;
-    padding-right: 4px;
 }
 .actc-about-me-addres a{
 	display: flex;
