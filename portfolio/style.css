@@ -787,6 +787,7 @@ span.actc-header-icon-text {
 }
 .actc-acquaintance-icon{
 	display: flex;
+	align-items: center;
 }
 .actc-acquaintance-icon i{
     color: #FC274D;
@@ -1675,9 +1676,6 @@ button.slick-custom-next.slick-arrow:hover{
 	.actc-nav-menu {
 	    height: 162px;
 	    margin: 8px 0px;
-	}
-	.actc-acquaintance-icon i{
-		margin-top: 2px;
 	}
 }
 @media(max-width: 525px){
