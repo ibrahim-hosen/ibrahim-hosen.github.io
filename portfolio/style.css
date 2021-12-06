@@ -1,6 +1,6 @@
 @import url('assets/css/_main.css');
 
-/*====About-v2.css========*/
+/*_##################################About-v2.css========*/
 
 .actc-about-me-item {
     display: flex;
@@ -47,9 +47,10 @@
 	box-shadow: 2px 3px 17px -1px #c3b1b1;
 }
 
-/*====About-v2.css End========*/
+/*################################################About-v2.css End========*/
 
-/*====_acquaintance_v2.css========*/
+/*################################################_acquaintance_v2.css========*/
+
 .actc-acquaintance-items{
 	height: 585px;
 	overflow-y: scroll;
@@ -84,9 +85,10 @@
 .actc-acquaintance-search li:hover i{
     transform: rotate(360deg);
 }
-/*====_acquaintance_v2.css End========*/
+/*##############################################_acquaintance_v2.css End========*/
 
-/*====_banner.css========*/
+/*##############################################_banner.css========*/
+
 .actc-banner-section-image{
 	position: relative;
 	background-image: url(assets/images/banner.jpg);
@@ -143,9 +145,11 @@
 	font-size: 18px;
 	font-weight: 500;
 }
-/*====_banner.css End========*/
 
-/*====_common.css End========*/
+/*###########################################_banner.css End========*/
+
+/*###########################################_common.css End========*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 *{
 	padding: 0;
@@ -220,9 +224,11 @@ p{
 	align-items: center;
 	justify-content: center;
 }
-/*====_common.css End========*/
 
-/*====_footer.css End========*/
+/*############################################_common.css End========*/
+
+/*############################################_footer.css End========*/
+
 /*=====Footer section====*/
 footer{
 	background: #000;
@@ -237,24 +243,6 @@ footer{
 	font-size: 17px;
 	color: #fff;
 }
-/*.actc-footer-icon a i{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: #fff;
-	width: 50px;
-	height: 50px;
-	font-size: 18px;
-	color: #FC274D;
-	border-radius: 3px;
-	transition: 0.5s;
-}
-.actc-footer-icon a i:hover{
-	color: #fff;
-	background: #FC274D;
-}*/
-
-
 #button {
 	display: flex;
 	justify-content: center;
@@ -279,7 +267,7 @@ footer{
 #button.show {
   opacity: 1;
 }
-/*=====Footer section End====*/
+
 /*# Preloader
 --------------------------------------------------------------*/
 #preloader {
@@ -326,9 +314,10 @@ footer{
 }
 
 /*--------------------------------------------------------------
-/*====_footer.css End========*/
+/*############################################_footer.css End========*/
 
-/*====_header.css End========*/
+/*############################################_header.css End========*/
+
 header{
 	position: relative;
 }
@@ -512,20 +501,10 @@ span.actc-header-icon-text {
   transition: 0.4s;
 }
 
-/*.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-3px, 5px);
-  transform: rotate(-45deg) translate(-3px, 5px);
-}
+/*##########################################====_header.css End========*/
 
-.change .bar2 {opacity: 0;}
+/*###############################################_home.css End##############========*/
 
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-3px, -6px);
-  transform: rotate(45deg) translate(-3px, -6px);
-}*/
-/*====_header.css End========*/
-
-/*====_home.css End========*/
 /*====About Me Section===*/
 .actc-about-me {
     display: flex;
@@ -859,13 +838,15 @@ span.actc-header-icon-text {
 }
 .actc-work-portfolio-image-items{
 	display: grid;
-	grid-gap: 30px;
+	grid-gap: 20px;
 	grid-template-areas: "box1 box2 box3";
 }
 .actc-work-portfolio-image-item{
 	position: relative;
 	overflow: hidden;
-
+	border-radius: 5px;
+	width: 100%;
+	height: 275px;
 }
 .actc-work-portfolio-image-item img{
 	width: 100%;
@@ -875,25 +856,6 @@ span.actc-header-icon-text {
 .actc-work-portfolio-image-item:hover img{
 	transform: scale(1.2);
 	transition: .9s;
-}
-.actc-work-portfolio-image-text{
-	position: absolute;
-	top: 0;
-	bottom: -46%;
-	padding: 15px;
-	z-index: 5;
-	overflow: hidden;
-	height: 0;
-	opacity: 0;
-	transform: scale3d(1, 0, 1);
-	transform-origin: bottom;
-	transition: 0.9s;
-}
-.actc-work-portfolio-image-item:hover .actc-work-portfolio-image-text{
-	opacity: 1;
-	transform: scale3d(1, 1, 1);
-	height: auto;
-	bottom: 0;
 }
 .actc-work-portfolio-image-text h3{
 	font-size: 20px;
@@ -909,46 +871,35 @@ span.actc-header-icon-text {
 	padding-bottom: 0;
 }
 .actc-work-portfolio-image-icon{
-	position: absolute;
-	bottom: -10%;
-	background: #FC274D;
+    background: #FC274D;
     border-radius: 50px;
     padding: 10px 15px;
-    margin: 15px;
     cursor: pointer;
-	z-index: 5;
-	overflow: hidden;
-	height: 0;
-	opacity: 0;
-	transform: scale3d(1, 0, 1);
-	transform-origin: bottom;
-	transition: 0.9s;
-}
-.actc-work-portfolio-image-item:hover .actc-work-portfolio-image-icon{
-	opacity: 1;
-	height: auto;
-	bottom: 0;
-	transform: scale3d(1, 1, 1);
+    display: block;
+    width: 158px;
+    position: absolute;
+    bottom: 17px;
+    left: 4%;
 }
 .actc-work-portfolio-image-icon a{
 	color: #fff;
 	font-size: 18px;
 	font-weight: 800;
 }
-.actc-work-portfolio-image-overlay:after{
+.actc-work-portfolio-image-overlay{
 	content: "";
 	position: absolute;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	top: 0;
-	background: #000;
-	opacity: 0.7;
+	background: #0000009c;
+	padding: 15px;
 	transition: 0.6s ease-in;
 	transform-origin: bottom;
 	transform: scale3d(1, 0, 1);
 }
-.actc-work-portfolio-image-item:hover .actc-work-portfolio-image-overlay:after{
+.actc-work-portfolio-image-item:hover .actc-work-portfolio-image-overlay{
 	transform: scale3d(1, 1, 1);
 	transition: 0.6s ease-in;
 }
@@ -1005,43 +956,6 @@ span.actc-header-icon-text {
 	color: #fff;
 }
 /*====Project Lest Services End===*/
-
-/*====Pricing Plan Services===*/
-/*.actc-pricing-menu>ul{
-    display: flex;
-    width: 100%;
-    margin: 36px 0px;
-}
-.actc-pricing-menu>ul>li{
-	position: relative;
-	text-align: center;
-	background: #fff;
-	width: 24%;
-	margin-right: 15px;
-	padding: 15px 0px;
-	cursor: pointer;
-}
-.actc-pricing-menu>ul>li>a{
-	font-size: 18px;
-    font-weight: 500;
-    color: #6c6969;
-}
-.actc-pricing-menu>ul>li.active {
-    background: #FC274D;
-}
-.actc-pricing-menu>ul>li.active a{
-	color: #fff;
-}
-.actc-pricing-menu>ul>li.active.actc-pricing-angel:after {
-    content: "";
-    position: absolute;
-    border-top: 10px solid #FC274D;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    left: 40%;
-    bottom: -17%;
-}*/
-/*====Pricing Plan Services End===*/
 
 /*====Update and Blog Services===*/
 .actc-update-blog-title{
@@ -1289,8 +1203,6 @@ button.slick-custom-next.slick-arrow:hover{
 }
 /*=====Contact Me section End====*/
 
-
-
 /*==================Responcib==========================*/
 @media(max-width: 1151px){
 	.actc-about-me-addres a i {
@@ -1402,11 +1314,6 @@ button.slick-custom-next.slick-arrow:hover{
 	.actc-work-portfolio-image-items {
 		grid-template-areas: "box1 box2";
 	}
-/*	.actc-work-portfolio-image-item img {
-	    width: 100%;
-	    max-width: inherit;
-	    height: 100% !important;
-	}*/
 	.actc-work-portfolio-image-text h3{
 		font-size: 20px !important;
 		line-height: inherit;
@@ -1720,12 +1627,16 @@ button.slick-custom-next.slick-arrow:hover{
 	.actc-work-portfolio-image-text{
 		padding: 10px 15px;
 	}
+	.actc-work-portfolio-image-overlay{
+		padding: 8px;
+	}
 }
 /*==================Responcib End==========================*/
 
-/*====_home.css End========*/
+/*##############################################_home.css End========*/
 
-/*====_service.css End========*/
+/*##############################################_service_v2.css End========*/
+
 .actc-fastest-serices-items{
 	margin-top: 30px;
 	border-radius: 5px;
@@ -1775,10 +1686,8 @@ button.slick-custom-next.slick-arrow:hover{
 .actc-fastest-serices-items:hover a{
 	box-shadow: none;
 }
-/*====_service.css End========*/
 
-
-
+/*##################################################_service_v2.css End========*/
 
 .cd-words-wrapper {
   display: inline-block;
