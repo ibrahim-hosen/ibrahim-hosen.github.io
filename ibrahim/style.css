@@ -22,7 +22,8 @@
 10. Footer Img CSS
 11. Back to top init CSS
 12. Preloader CSS
-13. Mobile Responsive CSS
+13. Blog CSS
+14. Mobile Responsive CSS
 ----------------------------*/
 
 /*
@@ -939,22 +940,165 @@ footer{
 ==========================================
 */
 
+
 /*
 ==========================================
-13. Mobile Responsive CSS
+13. Blog CSS
 ==========================================
+*/
 
 
-
-.astra-portfolio-style-1 .site-preview:hover {
-    background-position: center bottom;
-    background-size: cover;
+.breadcrumb ul li {
+    display: inline-block;
 }
-.astra-portfolio-style-1 .site-preview {
-    display: block;
+
+.breadcrumb ul li a {
     position: relative;
-    transition: all ease-in-out 3s;
-    background-position: center top;
+    font-size: 18px;
+    font-weight: 700;
+    color: #221638;
+    transition: all 0.5s ease;
+    font-family: 'Raleway', sans-serif;
+}
+
+.breadcrumb ul li a:hover{
+    color: #dd3333;
+}
+
+.image-block {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 30px;
     background-size: cover;
+    background-position-y: 19%;
     background-repeat: no-repeat;
 }
+
+.block-title h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.block-meta {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-tag span a {
+    color: #dd3333;
+}
+
+.social-info ul li {
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.social-info ul li a{
+    width: 30px;
+    height: 30px;
+    background: #ddeee8;
+    color: #221638;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    margin-left: 5px;
+    transition: all 0.5s ease;
+}
+
+.social-info ul li a:hover {
+    color: #F8F8F8;
+    background-color: #dd3333;
+}
+
+.text-module p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+blockquote.blockquote{
+    position: relative;
+    background-color: #ddeee8;
+    padding: 20px 0px 20px 20px;
+}
+
+blockquote.blockquote:after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: #091A4C;
+    top: 0;
+    left: 0;
+}
+
+.text-module ul {
+    padding-left: 40px;
+    padding-bottom: 17px;
+}
+
+.text-module ul li {
+    padding: 2px 0px;
+    font-weight: 500;
+    position: relative;
+}
+
+.text-module ul li:after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #091A4C;
+    left: -14px;
+    top: 34%;
+    transform: translateX(-34%);
+    border-radius: 50px;
+}
+
+.gallery-img-werap {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+a.item-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.gallery-img-werap i {
+    background: #86BB46;
+    color: #ffffff;
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid #c3d9c5;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+/*
+==========================================
+14. Mobile Responsive CSS
+==========================================
