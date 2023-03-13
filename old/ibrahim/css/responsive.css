@@ -1,0 +1,109 @@
+/*******************************
+	Mobile Responsive CSS
+*******************************/
+@media (max-width: 1199px){
+	.nav-menu ul li {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.banner-text h1 {
+	    font-size: 48px;
+	    line-height: 58px;
+	}
+
+}
+
+@media(max-width:991px){
+	.blog-item,
+	.top-footer-contant{
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 790px){
+	.banner-text {
+		width: 100%;
+	}
+
+	.banner-image {
+		display: none;
+	}
+}
+
+@media(max-width: 767px){
+
+}
+
+@media(max-width: 638px){
+
+}
+
+@media(max-width: 614px){
+.about-right-text h4 {
+	font-size: 18px;
+}
+}
+
+@media(max-width: 575px){
+	.about-right-box {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	    margin-bottom: 30px;
+	}
+
+	.title h2{
+		font-size: 30px;
+	}
+
+	.section-box,
+	.portfolio-item{
+		margin-bottom: 30px;
+	}
+
+	.port-load-more-btn{
+		margin-top: 13px;
+	}
+
+	.sp-60 {
+		padding: 45px 0px 50px 0px;
+	}
+
+	.banner-text h1 {
+		font-size: 42px;
+		line-height: 48px;
+	}
+
+	.banner-text h2{
+		font-size: 25px;
+	}
+
+	.title{
+		margin-bottom: 45px;
+	}
+
+	.portfolio-menu ul li button{
+		font-size: 16px;
+	}
+}
+
+@media(max-width: 425px){
+	.container{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.banner-text h1 {
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	.banner-text h2 {
+		font-size: 22px;
+	}
+
+}
+
+@media(max-width: 330px){
+
+}

@@ -1,0 +1,44 @@
+.actc-about-me-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.actc-about-me-addres {
+    width: 33.33%;
+}
+.actc-about-me-addres a{
+	display: flex;
+	align-items: center;
+	padding: 3px;
+	padding-right: 15px;
+	background: #fff;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	box-shadow: 2px 2px 3px -1px #c3b1b1;
+}
+.actc-about-me-addres a i{
+	width: 53px;
+	height: 53px;
+	font-size: 22px;
+	color: #000;
+	border: 1px solid #ddd;
+	background: #fff;
+	transition: 0.5s;
+}
+.actc-about-me-addres a:hover i {
+	color: #fff;
+    background: #FC274D;
+    border: 1px solid #FC274D;
+	box-shadow: 1px 0px 18px -5px #fc274d;
+}
+.actc-about-me-btn a.actc-about-me-btn-active{
+	color: #fff;
+    background: #FC274D;
+    box-shadow: 1px 6px 13px -4px #fc274d;
+}
+.actc-about-me-btn a.actc-about-me-btn-active:hover{
+	background: #000;
+	box-shadow: 2px 3px 17px -1px #c3b1b1;
+}
+
+

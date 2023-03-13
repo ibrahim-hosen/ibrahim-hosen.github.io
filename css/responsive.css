@@ -1,0 +1,37 @@
+/*******************************
+	Mobile Responsive CSS
+*******************************/
+@media (max-width: 1199px){
+	.nav-menu ul li {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media(max-width:991px){
+
+}
+
+@media(max-width: 767px){
+
+}
+
+@media(max-width: 638px){
+
+}
+
+@media(max-width: 614px){
+
+}
+
+@media(max-width: 575px){
+
+}
+
+@media(max-width: 425px){
+
+}
+
+@media(max-width: 330px){
+
+}
