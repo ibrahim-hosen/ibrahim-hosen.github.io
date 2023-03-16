@@ -100,7 +100,7 @@ a, a:hover, a:focus {
 }
 
 .sp-60{
-    padding: 60px 0px 60px 0px;
+    padding: 100px 0px 100px 0px;
 }
 
 .cmt-60{
@@ -305,7 +305,9 @@ header.navbar-scroll-fixed {
     transform-origin: left center;
 }
 
-
+.nav-menu ul li.current a:after{
+    transform: scaleX(1);
+}
 
 /*
 ==========================================
@@ -511,25 +513,34 @@ span.edumall-shape-3 {
     border-radius: 0px 20px 0px 20px;
 }
 
-.section-box h2 {
-    padding: 41px 0px 9px 0px;
+.section-box h2:after{
+    content: "1";
+    position: absolute;
+    width: 300px;
+    height: 200px;
     background-color: #EA4343;
     transform: rotate(-45deg);
-    position: absolute;
-    top: -29px;
-    left: -371px;
-    font-family: fantasy;
-    font-weight: 200;
+    top: -110px;
+    left: -170px;
     right: 0;
-    font-size: 36px;
-    color: #fff;
+    z-index: -1;
     transition: all 0.5s ease;
 }
-
-.section-box:hover h2{
-    background-color: #221638;
+h2.section-angle {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0;
+    font-size: 36px;
+    color: #fff;
+    font-family: fantasy;
+    font-weight: 200;
+    padding: 15px;
 }
 
+.section-box:hover.section-box h2:after{
+    background-color: #221638;
+}
 .section-box h4 {
     padding: 8px 0px;
 }
@@ -929,8 +940,6 @@ footer{
 11. Back to top init CSS
 ==========================================
 */
-
-
 
 
 /*
