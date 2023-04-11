@@ -1,6 +1,11 @@
 (function ($) {
     'use strict';
 
+    /*======== Mobile Menu Toggle Click Setup ========*/
+    $(".humbergur").on('click', function(){
+       $("body").toggleClass('allWork');
+    });
+
     /*======== Navbar Sticky Header ========*/
 	$(window).scroll(function(){
         var $window = $(window);

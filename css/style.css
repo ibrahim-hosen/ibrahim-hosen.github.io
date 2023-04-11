@@ -257,7 +257,7 @@ header.navbar-scroll-fixed {
 
 .header-menu {
     display: flex;
-    padding: 25px 0px;
+    padding: 20px 0px;
     justify-content: space-between;
     align-items: center;
 }
@@ -309,6 +309,10 @@ header.navbar-scroll-fixed {
     transform: scaleX(1);
 }
 
+.xs-mobile-menu,
+.humbergur{
+    display: none;
+}
 /*
 ==========================================
 04. Banner CSS
