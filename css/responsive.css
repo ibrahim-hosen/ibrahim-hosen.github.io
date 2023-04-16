@@ -6,9 +6,23 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+    .banner-text h1 {
+    font-size: 54px;
+    line-height: 66px;
+}
 }
 
 @media(max-width:991px){
+    .banner-preview-image img{
+        width: 338px;
+    }
+    .banner-preview-image img{
+        width: 320px;
+    }
+    span.edumall-shape-2,
+    span.edumall-shape-3{
+        width: 120px;
+    }
 	.header-menu nav.nav-menu,
 	.header-btn{
     display: none;
@@ -169,10 +183,33 @@ body.allWork {
     transition: all 0.3s;
     z-index: -1;
 }
+.cont-form {
+    margin-left: 0;
+    margin-right: 0;
+}
+.cont {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
 }
 
+@media(max-width: 900px){
+.banner-image {
+    display: none;
+}
+.banner-text{
+    width: 100%;
+}
+.banner {
+    padding: 45px 0px;
+}
+}
 @media(max-width: 767px){
-
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 }
 
 @media(max-width: 638px){
@@ -184,7 +221,50 @@ body.allWork {
 }
 
 @media(max-width: 575px){
-
+.banner-text h1 {
+    font-size: 39px;
+    line-height: 51px;
+}
+.banner-text h2{
+    font-size: 29px;
+}
+.title h2{
+    font-size: 28px;
+}
+.bottom-footer-text p {
+    font-size: 15px;
+}
+.about-right-box {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.about-right-text {
+    text-align: center;
+}
+.footer-menu-wrap{
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.top-footer.sp-60 {
+    padding: 63px 0px;
+}
+.footer-menu p {
+    display: inline-block;
+    padding-right: 15px;
+}
+.footer-menu {
+    padding-top: 30px;
+}
+.about-left-contant h3 {
+    font-size: 20px;
+}
+.portfolio-menu ul li button {
+    padding: 2px 7px;
+    border-radius: 5px;
+    font-size: 16px;
+}
 }
 
 @media(max-width: 425px){

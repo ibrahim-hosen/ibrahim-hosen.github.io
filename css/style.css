@@ -251,6 +251,7 @@ header.navbar-scroll-fixed {
     position: fixed;
     width: 100%;
     z-index: 99;
+    top: -2px;
     -webkit-box-shadow: 0 2px 10px rgb(31 66 135 / 25%);
     box-shadow: 0 2px 10px rgb(31 66 135 / 25%);
 }

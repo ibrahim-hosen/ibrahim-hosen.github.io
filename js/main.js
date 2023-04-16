@@ -37,6 +37,13 @@
         easing: 'swing',
      });
      
+   /*======== Match Height ========*/
+   if($('.mHc').length){
+        $('.mHc').matchHeight();
+   };
+   if($('.mHc1').length){
+        $('.mHc1').matchHeight();
+   };
 	/*======== WOW Activation ========*/
 	new WOW().init();
 
