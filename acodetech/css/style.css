@@ -1,0 +1,2231 @@
+/*********** Template *************************************
+    Template Name: Xclude - Resume HTML Template
+    Author: acodetech
+    Envato Profile: https://themeforest.net/user/acodetech
+    version: 1.0
+    Copyright: 2022
+************************************************************/
+
+/*---------------------------
+ CSS Index  
+****************************
+
+01. Google Fonts
+02. Reset CSS
+03. Header Menu CSS
+04. Header Img CSS
+05. About CSS
+06. Resume CSS
+07. Service CSS
+08. Portfolio CSS
+09. Portfolio Modal CSS
+10. Counter CSS
+11. blog CSS
+12. Testimonial CSS
+13. blog Modal CSS
+14. Team CSS
+15. Pricing CSS
+16. Client CSS
+17. Contact CSS
+18. Footer Img CSS
+19. Back to top init CSS
+20. Preloader CSS
+21. Mobile Responsive CSS
+----------------------------*/
+
+/*
+==========================================
+01. Google Fonts
+==========================================
+*/
+
+/*font-family: 'Raleway', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+/*
+==========================================
+02. Reset CSS
+==========================================
+
+*/
+*{
+  margin: 0;
+  padding: 0; 
+}
+
+body{
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #151515;
+    font-family: 'Raleway', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+
+
+h2 {
+  font-weight: 700; 
+}
+
+h3, h4, h5, h6 {
+  font-weight: 600; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.sp-50{
+    padding: 65px 0px 65px 0px;
+}
+
+.cmt-60{
+    margin-top: 60px;
+}
+
+.mt-60{
+    margin-bottom: 60px;
+}
+
+.mt-53 {
+    margin-bottom: 53px;
+}
+
+.mb-28 {
+    margin-bottom: 28px;
+}
+
+.section-header h2{
+    position: relative;
+    text-transform: uppercase;
+    color: #151515;
+    font-size: 25px;
+}
+
+.section-header span {
+    color: #ff0000;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.section-header h2:after {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 2px;
+    background: #ff0000;
+    left: 0;
+    bottom: -5px;
+}
+
+.section-header h2:before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background: #ff0000;
+    bottom: -10px;
+    left: 2%;
+}
+
+.container{
+    max-width: 1170px;
+}
+
+.title-color h2{
+    color: #fff;
+}
+
+section{
+    overflow: hidden;
+}
+
+.btn-main {
+    position: relative;
+    display: inline-block;
+    color: #fff !important;
+    text-decoration: none;
+    background: #fe320a;
+    padding: 8px 10px;
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 30px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    z-index: 99;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-main:before{
+    content: "";
+    position: absolute;
+    left: -1em;
+    top: -2px;
+    bottom: -2px;
+    right: -1em;
+    z-index: -1;
+    background: #000;
+    border-radius: 0px;
+    transform: translate3d(-100%,0,0) skew(-30deg,0);
+    transform-origin: left;
+    transition: all 0.5s ease;
+}
+
+.btn-main:hover:before{
+    transform: translate3d(0,0,0) skew(-30deg,0);
+}
+
+/*
+==========================================
+03. Header Menu CSS
+==========================================
+*/
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.header-main.show {
+    display: flex;
+    position: fixed;
+    background: #fff;
+    padding: 18px 0px;
+    z-index: 999;
+    box-shadow: 2px 3px 17px -1px #c3b1b1;
+}
+
+.main-menu ul.nav-menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.main-menu ul.nav-menu li:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fe320a;
+    left: 0;
+    top: -100%;
+    transform: scaleX(0);
+    transition: -webkit-transform 0.5s;
+    transform-origin: right center;
+}
+
+.main-menu ul.nav-menu li:hover:before,
+.main-menu ul.nav-menu li.current:before,
+.header-main.show .main-menu ul li:hover:before{
+    transform: scaleX(1);
+    transform-origin: left center;
+}
+
+.header-main.show .main-menu ul li:before{
+    top: -71%;
+}
+
+.main-menu .logo img.logo-color {
+    display: none;
+}
+
+.header-main.show .main-menu .logo img.logo-color {
+    display: block;
+}
+
+.header-main.show .main-menu .logo img.logo-white {
+    display: none;
+}
+
+.main-menu ul.nav-menu li a {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.header-main {
+    position: absolute;
+    width: 100%;
+    padding: 25px 0px;
+    z-index: 9;
+}
+
+.main-menu ul.nav-menu li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    transition: all 0.5s ease;
+}
+
+.header-main.show .main-menu ul li a{
+    color: #151515;
+}
+
+.main-menu ul.nav-menu li:last-of-type {
+    padding-left: 0px;
+}
+
+.main-menu ul.nav-menu li a:hover {
+    color: #fe320a;
+}
+
+.main-menu ul.nav-menu li.current a{
+    color: #fe320a;
+}
+
+.header-main.show .main-menu ul li.current a{
+    color: #fe320a;
+}
+
+.humbergur {
+    display: none;
+}
+
+.humbergur .bar-1,
+.humbergur .bar-2,
+.humbergur .bar-3{
+    width: 30px;
+    height: 3px;
+    margin: 4px 0px;
+    background-color: #151515;
+    transition: 0.5s;
+}
+
+.humbergur.opener .bar-1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 9px);
+    transform: rotate(-45deg) translate(-6px, 8px);
+}
+
+.humbergur.opener .bar-2{
+    opacity: 0;
+}
+
+.humbergur.opener .bar-3{
+    -webkit-transform: rotate(45deg) translate(-2px, -4px);
+    transform: rotate(45deg) translate(-2px, -4px);
+}
+/*
+==========================================
+04. Header Img CSS
+==========================================
+*/
+
+.banner-section{
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+.banner-section:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+    z-index: -1;
+}
+
+.header-content {
+    margin-top: 24px;
+}
+
+.d-table{
+    display: table;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.d-table-cell{
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.banner-section .container,
+.banner-section .row,
+.banner-section .col-md-12{
+    height: 100%;
+}
+
+.image_wrap {
+    margin: auto;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    border: 8px solid #282727;
+    transition: all 0.5s ease;
+}
+
+.image_wrap img {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+.image_wrap:hover img{
+    transform: scale(1.2);
+}
+
+.header-content h1 {
+    color: #fff;
+    margin-top: 25px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.header-content h1 span {
+    color: #fe320a;
+}
+
+.header-content p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin: 16px auto;
+    line-height: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left; 
+}
+
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  color: #fe320a;
+  left: 0;
+  top: 0; 
+}
+
+.cd-words-wrapper b.is-visible {
+  position: relative; 
+}
+
+.cd-words-wrapper b {
+  opacity: 0; 
+}
+
+.cd-words-wrapper b.is-visible {
+  opacity: 1; 
+}
+
+.cd-headline.clip span {
+  display: inline-block;
+  padding: 0; 
+}
+
+.cd-headline.clip .cd-words-wrapper {
+  overflow: hidden;
+  vertical-align: middle; 
+}
+
+.cd-headline.clip .cd-words-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 2px;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-50%); 
+}
+
+.cd-headline.clip b {
+  opacity: 0; 
+}
+
+.cd-headline.clip b.is-visible {
+  opacity: 1; 
+}
+
+span.actc-cd-text{
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.down-arrow {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    top: 88%;
+    font-size: 25px;
+    color: #fff;
+    margin-left:-30px;
+    animation: bounce 2s infinite;
+}
+
+.down-arrow:hover {
+    color: #fff;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}
+
+/*
+==========================================
+05. About CSS
+==========================================
+*/
+
+.about-left i{
+    position: relative;
+    display: inline-block;
+}
+.about-left i:after,
+.about-left i:before{
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    border-width:6px 0px 0px 6px;
+    border-color: red;
+    border-style: solid;
+    height: 30%;
+    width: 20%;
+    transition: all 0.5s ease;
+}
+
+.about-left i:before{
+    bottom: -6px;
+    right: -6px;
+    left: auto;
+    top: auto;
+    border-width: 0px 6px 6px 0px;
+}
+
+.about-left:hover{
+    border-radius: 0px;
+}
+.about-left i:hover::after{
+    height: 100%;
+}
+
+.about-left i:hover::before{
+    height: 100%;
+}
+
+.about-left i img {
+    max-width: 100%;
+}
+
+.about-right h3 {
+    font-size: 20px;
+    color: #151515;
+}
+
+.about-right p {
+    margin-top: 20px;
+    color: #1e1e1e;
+}
+
+.about-right p span {
+    font-style: italic;
+    font-weight: 500;
+    color: #fe320a;
+}
+
+.about-short-contact-wrap {
+    margin-top: 35px;
+}
+
+.about-cont-info ul li{
+    float: left;
+    width: 50%;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-cont-info ul li:nth-child(even){
+    float: right;
+}
+
+.about-cont-info ul li span label {
+    margin-right: 6px;
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.about-cont-info ul li span i {
+    position: relative;
+    background: #fe320a;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.about-cont-info ul li span i:after {
+    content: "";
+    position: absolute;
+    border: 2px solid #fe320a;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    left: -5px;
+    top: -5px;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.about-cont-info ul li span a{
+    position: relative;
+    color: #fe320a;
+    transition: all 0.5s ease;
+}
+
+.about-cont-info ul li span a:hover{
+    color: #151515;
+}
+
+.about-cont-info ul li span a:before{
+    content: "";
+    position: absolute;
+    background: #151515;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transition: -webkit-transform 0.5s;
+    transform-origin: right center;
+}
+
+.about-cont-info ul li span a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left center;
+}
+
+/*
+==========================================
+06. Resume CSS
+==========================================
+*/
+.act-resume.sp-50 {
+    background: #4c4d4d;
+}
+
+.resume-text {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #151515;
+}
+
+.resume h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.resume-text h5 {
+    background: #fe320a;
+    color: #fff;
+    display: inline-block;
+    padding: 4px 7px;
+    line-height: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.resume-text h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin: 10px 0px;
+}
+
+.resume-text span {
+    color: #fe320a;;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.resume-text p {
+    font-weight: 500;
+    margin-top: 5px;
+    color: #ddd;
+}
+
+/*-------Skills CSS Start-------*/
+
+.skill-item {
+    padding: 0 20px;
+}
+
+.subheading {
+    position: relative;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.subheading h2 {
+    display: inline-block;
+    font-size: 25px;
+    letter-spacing: .5px;
+    position: relative;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+.subheading h2:before, .subheading h2:after {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 7px;
+    background-color: rgba(255, 255, 255, 0.6);
+    bottom: 0;
+}
+
+.subheading h2:before {
+    left: 0;
+}
+
+.subheading h2:after {
+    right: 0;
+}
+
+.progress-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+
+.skill-item:last-of-type .progress {
+    margin-bottom: 0px;
+}
+
+.progress {
+    margin-bottom: 20px;
+    overflow: hidden;
+    background: #dce1e4;
+    border-radius: 14px;
+    box-shadow: inset 8px 8px 16px #f1f1f1, inset -8px -8px 16px #0f0f104f;
+}
+.progress-bar {
+    position: relative;
+    border-radius: 14px;
+    background: linear-gradient(145deg, #f02981c9 0%, #fe320a 100%);
+    transition: all .6s ease;
+}
+
+/*-------Skills CSS End---------*/
+
+/*
+==========================================
+07. Service CSS
+==========================================
+*/
+.act-service{
+    background-color: #f9f9f9;
+    position: relative;
+    z-index: 2;
+}
+
+.services-box {
+    position: relative;
+    border-radius: 50px;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    padding: 16px 16px 40px 16px;
+    -webkit-box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+}
+
+.srvice-img-crtl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 50px;
+    transform: scale(0.7);
+    transition: all 0.5s ease
+}
+
+.services-box:hover .srvice-img-crtl {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.services-box:hover{
+    color: #fff;
+}
+.services-box:after {
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.services-box:hover::after{
+    opacity: 1;
+}
+.services-box h5 {
+    font-size: 23px;
+    line-height: 32px;
+    padding-bottom: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.services-box h4 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    color: #fe320a;
+    line-height: 65px;
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.services-box:hover h4{
+    color: #fff;
+}
+
+.services-box p {
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+}
+
+.services-icon{
+    position: relative;
+}
+.services-icon i {
+    position: absolute;
+    background: #fe320a;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    left: 42%;
+    bottom: -60px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 22px;
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.services-box:hover .services-icon i{
+    background: #2e2e2e;
+}
+
+.services-icon span:before{
+    content: "";
+    position: absolute;
+    border: 2px solid #fe320a;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    left: 39%;
+    top: 86%;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+.services-box:hover ::before{
+    border-color: #2e2e2e;
+}
+
+/*
+==========================================
+08. Portfolio CSS
+==========================================
+*/
+
+.portfolio-menu button {
+    text-transform: uppercase;
+    background: transparent;
+    border: 0;
+    color: #1b1b1b;
+    font-size: 17px;
+    font-weight: 500;
+    outline: none;
+    padding: 0px 5px;
+    transition: all 0.5s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio-menu button:hover {
+    color: #ff0000;
+}
+
+button.mixitup-control-active {
+    color: #ff0000;
+}
+
+.portfolio-item {
+    position: relative;
+    margin: 24px 0px 0px;
+    overflow: hidden;
+}
+
+.mainimage {
+    position: relative;
+    width: 100%;
+    height: 298px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+}
+.mainimage:hover {
+    transform: scale(1.2);
+}
+
+.mainimage:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: rgba(0,0,0,.6);
+    transform: scale(0.2);
+    transition: all 0.5s ease;
+}
+
+.mainimage:hover::after{
+    opacity: 1;
+    transform: scale(1);
+}
+
+a.portfolio-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+a.portfolio-link i {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fe320a;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+a.portfolio-link i:hover{
+    background: #151515
+}
+
+a.portfolio-link i:after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid #fe320a;
+    z-index: 999;
+    transition: all 0.5s ease;
+}
+
+a.portfolio-link i:hover:after {
+    border: 2px solid #151515;
+}
+
+.portfolio-item:hover a.portfolio-link{
+    opacity: 1;
+}
+/*
+==========================================
+09. Portfolio Modal CSS
+==========================================
+*/
+
+.portfolio-menu-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 43px;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.owl-theme .owl-nav {
+    margin-top: 0px;
+}
+
+.portfolio-slider{
+    overflow: hidden;
+}
+
+.owl-prev {
+    position: absolute;
+    top: 50%;
+    left: -9%;
+    opacity: 0;
+    z-index: -9;
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+}
+
+.portfolio-slider:hover .owl-prev{
+    opacity: 1;
+    left: 0;
+    z-index: 999;
+}
+
+.owl-next {
+    position: absolute;
+    top: 50%;
+    right: -9%;
+    opacity: 0;
+    z-index: -9;
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+}
+
+.portfolio-slider:hover .owl-next{
+    opacity: 1;
+    right: 0;
+    z-index: 999;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    color: #fff;
+    font-size: 30px;
+    width: 31px;
+    height: 41px;
+    margin: 0px;
+    line-height: 38px;
+    background: #fe320a;
+    display: inline-block;
+    border-radius: 0px;
+    transition: all 0.5s ease;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background: #151515;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 13px;
+    height: 13px;
+    background: #fe320a;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: #151515;
+}
+
+.port-featured-text {
+    background: #FCFCFC;
+    padding: 15px 15px 50px 15px;
+}
+
+.owl-carousel-testimonial {
+    margin-bottom: 29px;
+}
+
+h4.desc-title {
+    font-size: 25px;
+    padding-bottom: 16px;
+    color: #151515;
+}
+
+.description ul li p i {
+    padding-right: 5px;
+    font-size: 16px;
+    color: #fe320a;
+}
+.description ul li p {
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.description ul li p a{
+    color: #fe320a;
+    transition: all 0.5s ease;
+}
+
+.description ul li p a:hover{
+    color: #151515;
+}
+
+.description>p {
+    padding-bottom: 20px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+.technology>ul>li {
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0px 8px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.technology>ul>li:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 14px;
+    background: #fe320a;
+    top: 4px;
+    right: -3px;
+}
+
+.technology>ul>li:last-of-type:after{
+    width: 0px;
+    height: 0px;
+}
+
+.port-featured-icon {
+    display: flex;
+    margin-top: 13px;
+}
+
+.port-featured-icon span {
+    color: #151515;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.port-featured-icon ul.social li {
+    display: inline-block;
+    padding-left: 14px;
+}
+
+.port-featured-icon ul.social li a {
+    color: #fe320a;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+
+.port-featured-icon ul.social li a:hover{
+    color: #151515;
+}
+/*
+==========================================
+10. Counter CSS
+==========================================
+*/
+
+.counter-box {
+    padding-bottom: 12px;
+}
+
+.act-counter{
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.counter-box .counter-number {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.counter-box .counter-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*
+==========================================
+11. blog CSS
+==========================================
+*/
+
+.blog-section{
+    background-color: #f9f9f9;
+}
+
+.blog-item{
+    position: relative;
+    padding:15px;
+    margin-bottom: 4px;
+    border-radius: 0px 10px 0px 10px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+}
+
+.blog-item h4.blog-titel a {
+    display: block;
+    color: #000;
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.5s ease;
+}
+
+.blog-image{
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.blog-image img{
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    transform: scale(1) translateZ(0);
+}
+
+.blog-image:hover img{
+    transform: scale(1.1) rotate(3deg);
+}
+
+.blog-item h4.blog-titel a:hover{
+    color: #fe320a;
+}
+
+.blog-item p.blog-date {
+    color: #151515;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.blog-item .blog-date a{
+    color: #fe320a;
+    transition: all 0.5s ease;
+}
+
+.blog-item .blog-date a:hover{
+    color: #151515;
+}
+
+.blog-item:after,
+.blog-item:before{
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    border-width: 4px 0px 0px 4px;
+    border-color: #fe320a;
+    border-style: solid;
+    height: 29%;
+    width: 17%;
+    transition: all 0.5s ease;
+}
+
+.blog-item:before{
+    bottom: -4px;
+    right: -4px;
+    left: auto;
+    top: auto;
+    border-width: 0px 4px 4px 0px;
+}
+
+.blog-item:hover{
+    border-radius: 0px;
+}
+.blog-item:hover::after{
+    height: 100%;
+}
+
+.blog-item:hover::before{
+    height: 100%;
+}
+
+/*
+==========================================
+12. Testimonial CSS
+==========================================
+*/
+.act-testimonial {
+    background: #4c4d4d78;
+}
+
+.card-info .card-thumbnail {
+    margin-bottom: 27px !important;
+    margin: auto;
+    overflow: hidden;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.card-thumbnail img{
+    max-width: 100%;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+.card-thumbnail img:hover{
+    transform: scale(1.1);
+}
+
+.card-info {
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+    background: #ddd;
+    text-align: center;
+}
+
+.card-content .subtitle{
+    color: #fe320a;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.card-content .title{
+    color: #151515;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    line-height: 35px;
+}
+
+.card-content .designation{
+    color: #3c3e41;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.card-description {
+    position: relative;
+    background: #ddd;
+    padding: 50px 40px 58px 40px;
+    border-radius: 10px;
+}
+
+.card-description .title-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-area .title-info .title{
+    color: #151515;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 35px;
+}
+
+.title-area .title-info .date {
+    font-weight: 600;
+    font-size: 18px;
+    color: #3c3e41;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rating {
+    background: #fff;
+    padding: 7px 17px 7px 17px;
+    border-radius: 6px;
+    color: #fe320a;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.card-description .discription {
+    position: relative;
+    margin-top: 30px;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #3c3e41;
+    border-top: 1px solid #b1b4b7;
+    padding-top: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.discription .discription-left{
+    padding-left: 40px;
+}
+.discription::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 0;
+    top: 15px;
+    transform: rotate(180deg);
+    background: transparent;
+    background-image: url(../images/testimonial/quote.png);
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.5;
+}
+.owl-carousel-testimonial .owl-next {
+    position: absolute;
+    width: 41px !important;
+    height: 41px !important;
+    top: 9%;
+    right: 41px;
+    opacity: 1;
+    z-index: 9999;
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+}
+
+.owl-carousel-testimonial .owl-prev {
+    position: absolute;
+    width: 41px !important;
+    height: 41px !important;
+    top: 9%;
+    left: auto;
+    right: 107px;
+    opacity: 1;
+    z-index: 999;
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+}
+
+.owl-carousel-testimonial .owl-dots {
+    position: absolute;
+    bottom: -12%;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{
+    display: block;
+}
+/*
+==========================================
+13. blog Modal CSS
+==========================================
+*/
+
+.modal-dialog {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.blog-featured-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    margin-top: -25px;
+    align-items: center;
+    justify-content: inherit;
+    padding: 0;
+    border-bottom: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.modal-cloge-icon button {
+    background: transparent;
+    border: 0;
+    right: 0;
+}
+
+.modal-cloge-icon i {
+    position: fixed;
+    right: 25px;
+    top: 3%;
+    display: flex;
+    border: 3px solid #fe320a;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    color: #fe320a;
+    padding: 0;
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.modal-cloge-icon i:hover{
+    color: #151515;
+    border: 3px solid #151515;
+}
+.modal.fade .modal-dialog {
+    top: 0;
+    left: 0;
+}
+
+.modal-content{
+    border-radius: 0px;
+    border: 0px;
+}
+
+.modal-backdrop.show {
+    opacity: inherit;
+}
+.modal-backdrop{
+    background: #fff;
+}
+
+.port-modal-text-area h4 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 35px 0px 13px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.port-modal-text-area p.blog-date {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    color: #151515;
+}
+
+.port-modal-text-area p.blog-date a{
+    color: #fe320a;
+    transition: all 0.5s ease;
+}
+
+.port-modal-text-area p.blog-date a:hover{
+    color: #151515;
+}
+
+.port-modal-text-area article.news-detiels {
+    padding-top: 35px;
+}
+
+
+.port-modal-text-area .article-content p {
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+.port-modal-text-area blockquote {
+    position: relative;
+    padding-left: 30px;
+    font-style: italic;
+    line-height: 29px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.port-modal-text-area blockquote:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background: #fe320a;
+    left: 0;
+    top: 0;
+}
+
+.port-modal-text-area .blog-featured-icon span {
+    color: #151515;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.port-modal-text-area .blog-featured-icon ul.social li a {
+    color: #fe320a;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+
+.port-modal-text-area .blog-featured-icon ul.social li a:hover{
+    color: #151515;
+}
+
+.port-modal-text-area .blog-featured-icon ul.social li {
+    display: inline-block;
+    padding-left: 14px;
+}
+.port-modal-text-area .blog-featured-icon {
+    display: flex;
+}
+
+/*
+==========================================
+14. Team CSS
+==========================================
+*/
+.text-contant{
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    box-shadow: 0 2px 13px 0 rgb(0 0 0 / 15%);
+}
+
+.text-contant:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgb(0 0 0 / 10%);
+}
+
+.team-img{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.team-icon {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    opacity: 0;
+    z-index: 999;
+    transition: all 0.5s ease;
+    transform: translateX(-50%);
+}
+
+.text-contant:hover .team-icon{
+    opacity: 1;
+}
+
+.team-img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+.team-img:hover img{
+    transform: scale(1.1);
+}
+
+.team-text {
+    padding: 20px 0px 10px 20px;
+}
+
+.team-text h3 {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.team-text p {
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.team-text i {
+    padding-right: 8px;
+}
+
+.team-icon ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease
+}
+
+.team-icon ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background: #fe320a;
+    border-radius: 50px;
+    float: left;
+    margin-right: 17px;
+    z-index: 0;
+    transition: all 0.5s ease;
+}
+
+.team-icon ul li:hover{
+    background: #fff;
+}
+
+.team-icon ul li:after {
+    content: "";
+    position: absolute;
+    border: 2px solid #fe320a;
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+.team-icon ul li:hover:after{
+    border: 2px solid #fff;
+}
+
+.team-icon ul li a {
+    font-size: 15px;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.team-icon ul li:hover a{
+    color: #fe320a;
+}
+/*
+==========================================
+15. Pricing CSS
+==========================================
+*/
+section.act-pricing{
+    background: #f9f9f9;
+}
+
+.act-pricing{
+    background: #151515;
+}
+
+.pricing-wrap {
+    background-color: #EAEFF1;
+    border-radius: 10px;
+}
+
+.pricing-menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    background: #ddd;
+    box-shadow: 0px 5px 3px -1px rgb(0 0 0 / 20%);
+    border-radius: 10px 10px 0px 0px;
+    justify-content: space-between;
+}
+
+.pricing-menu ul li{
+    width: 33.33%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.pricing-menu ul li:hover{
+    color: #fff;
+    background: #fe320a;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.pricing-menu ul li a.active{
+    color: #fff;
+    background: #fe320a;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.pricing-menu ul li.active a{
+    color: #fff;
+}
+
+.pricing-menu ul li a{
+    display: block;
+    color: #151515;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 30px 10px;
+    transition: all 0.5s ease;
+    text-align: center;
+}
+
+.pricing-menu ul li a:hover{
+    color: #fff;
+}
+
+.pricing-crtl {
+    padding: 40px 40px 30px 40px;
+}
+
+.pricing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.header-left h2.title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.header-left span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header-right span{
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 30px;
+    color: #fe320a;
+    padding: 11px 20px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pricing-body p {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.pricing-text {
+    margin-top: 30px;
+}
+
+.pricing-text ul li {
+    float: left;
+    width: 50%;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pricing-text ul li:nth-child(even) {
+    float: right;
+}
+
+.pricing-text ul li i {
+    color: #fe320a;
+    font-size: 21px;
+    padding-right: 10px;
+}
+
+.pricing-footer .pricing-btn {
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 18px 0px;
+    margin: 30px 0px;
+    color: #fe320a;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.5s ease;
+}
+
+.pricing-footer .pricing-btn:hover{
+    background: #fe320a;
+    color: #fff;
+}
+
+.pricing-footer .pricing-btn span {
+    color: #fe320a;
+    padding-right: 5px;
+    transition: all 0.5s ease;
+}
+
+.pricing-footer .pricing-btn:hover span{
+    padding-right: 10px;
+    color: #fff;
+}
+
+.pricing-ftr-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-cmt {
+    padding: 0px 15px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.single-cmt i{
+    padding-right: 5px;
+}
+
+/*
+==========================================
+16. Client CSS
+==========================================
+*/
+
+.client {
+    width: 100px;
+    height: auto;
+    margin: auto;
+}
+
+.clients {
+    overflow: hidden;
+    background: #f6f6f6;
+}
+
+.owl-item {
+  opacity: 0;
+}
+
+.owl-item.active {
+  opacity: 1;
+}
+
+.client img {
+    transition: all 0.4s ease-in-out;
+    opacity: 0.5;
+}
+
+.client img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/*
+==========================================
+17. Contact CSS
+==========================================
+*/
+
+.contact-left>ul>li {
+    position: relative;
+    margin: 0px 0px 25px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-left ul li .cont-icon {
+    position: absolute;
+    font-size: 24px;
+    background: #fe320a;
+    color: #fff;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.contact-left ul li:hover .cont-icon{
+    background: #151515;
+}
+
+.contact-left ul li .cont-icon:after{
+    content: "";
+    position: absolute;
+    border: 2px solid #fe320a;
+    border-radius: 50px;
+     width: 52px;
+    height: 52px;
+    transition: all 0.5s ease;
+}
+
+.contact-left ul li:hover .cont-icon:after{
+    border: 1px solid #151515;
+}
+.contact-left ul li .cont-text {
+    padding-left: 60px;
+    display: block;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.contact-left ul li .cont-text p {
+    font-weight: 500;
+    text-transform: none;
+}
+
+.contact-left ul li .cont-text a {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fe320a;
+    text-transform: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s ease;
+}
+
+.contact-left ul li .cont-text a:hover{
+    color: #151515;
+    border-bottom: 1px solid #151515;
+}
+
+.cont-flex{
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.cont-subject {
+    margin: 15px 0px;
+}
+
+.cont-item {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.form-control {
+    border-radius: 0;
+    padding: 9px 10px;
+    border: 1px solid #151515;
+}
+
+.form-control:focus{
+    border: 1px solid #fe320a;
+    box-shadow: none;
+}
+
+.contact-right form label {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+}
+
+.contact-right form label span{
+    color: #fe320a;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.cont-submit {
+    margin-top: 20px;
+    position: relative;
+}
+
+.cont-submit button{
+    border: 0px;
+    outline: none;
+}
+
+/*
+==========================================
+18. Footer Img CSS
+==========================================
+*/
+
+footer{
+    background: #151515;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text p{
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-icon ul li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: #fe320a;
+    border-radius: 50px;
+    float: left;
+    margin-right: 17px;
+    z-index: 0;
+    transition: all 0.5s ease;
+}
+
+.footer-icon ul li a {
+    font-size: 17px;
+    color: #fff;
+}
+
+.footer-icon ul li:after {
+    content: "";
+    position: absolute;
+    border: 2px solid #fe320a;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+.footer-icon ul li:hover::after{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-icon ul li:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/*
+==========================================
+19. Back to top init CSS
+==========================================
+*/
+
+#button.show {
+    opacity: 1;
+}
+#button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fe320a;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    opacity: 0;
+    border-radius: 50px;
+    z-index: 999;
+}
+
+#button:after {
+    content: "";
+    position: absolute;
+    border: 2px solid #fe320a;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+#button:hover::after{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+#button:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+/*
+==========================================
+20. Preloader CSS
+==========================================
+*/
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  background: #FAFAFA;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #37517e;
+  border-top-color: #fe320a;
+  border-bottom-color: #fe320a;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+/*
+==========================================
+21. Mobile Responsive CSS
+==========================================
+*/
