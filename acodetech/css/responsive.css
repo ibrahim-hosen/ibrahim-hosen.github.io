@@ -1,0 +1,454 @@
+/*******************************
+	Mobile Responsive CSS
+*******************************/
+@media (max-width: 1199px){
+body .container {
+    	max-width: 100%;
+    	padding: 0 15px;
+	}
+
+	.card-content .title{
+		font-size: 22px;
+	}
+
+	.card-content .designation{
+		font-size: 16px;
+	}
+
+	.card-info .card-thumbnail {
+    	margin-bottom: 15px !important;
+	}
+
+	.card-info {
+    	padding: 30px 25px 30px 25px;
+	}
+}
+
+@media(max-width:991px){
+	.header-main {
+	    position: fixed;
+	    background: #fff;
+	    padding: 18px 0px;
+	    z-index: 999;
+	    box-shadow: 2px 3px 17px -1px #c3b1b1;
+	}
+
+	.humbergur {
+		cursor: pointer;
+    	display: block;
+	}
+
+	ul.nav-menu {
+	    position: absolute;
+	    top: 100%;
+	    left: 0;
+	    width: 100%;
+	    height: calc(100vh - 100px);
+	    background: #fff;
+	    padding-top: 20px;
+	    border-top: 1px solid #CCCCCC;
+	    border-bottom: 1px solid #CCCCCC;
+	    transform: scale3d(1, 0, 1);
+	    transform-origin: top;
+	    transition: all 0.5s ease;
+	}
+
+	ul.nav-menu.opener{
+		transform: scale3d(1, 1, 1);
+	}
+
+	.main-menu ul.nav-menu li {
+	    display: block;
+	    padding: 8px 0px;
+	}
+
+	.main-menu ul.nav-menu li a {
+	    color: #151515;
+	    display: block;
+	    font-size: 17px;
+	}
+
+	.about-left{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 18px;
+	}
+
+	.counter-box{
+	    margin-bottom: 30px;
+	}
+
+	.blog-item {
+    	margin-bottom: 25px;
+	}
+
+	.counter-box .counter-name {
+    	font-size: 19px;
+	}
+
+	.sp-50 {
+    	padding: 25px 0px;
+	}
+
+	.cmt-60 {
+    	margin-top: 30px;
+	}
+
+	.act-testimonial {
+	    padding-bottom: 50px !important;
+	}
+
+	.card-description {
+    	padding: 50px 25px 58px 25px;
+	}
+
+	.title-area .title-info .title{
+		font-size: 21px;
+	}
+
+	.card-description .discription{
+		font-size: 16px;
+	}
+
+	.title-area .title-info .date{
+		font-size: 15px;
+	}
+
+	.card-info {
+	    padding: 30px 15px 30px 15px;
+	}
+
+	.main-menu .logo img.logo-white {
+	    display: none;
+	}
+
+	.main-menu .logo img.logo-color {
+    	display: block;
+	}
+
+	.text-contant{
+		margin-bottom: 25px;
+	}
+
+	.main-menu ul.nav-menu li:before{
+		display: none;
+	}
+}
+
+@media(max-width: 767px){
+	.contact-right {
+   	 	margin-top: 35px;
+	}
+
+	.about-cont-info ul li{
+		width: 100%;
+	}
+
+	.section-header h2{
+		font-size: 20px;
+	}
+
+	.section-header span{
+		font-size: 15px;
+	}
+
+	.section-header h2:after{
+		width: 50px;
+	}
+
+	.section-header h2:before{
+		width: 85px;
+	}
+
+	.card-info{
+		padding: 15px;
+	}
+
+	.card-info {
+	    display: flex;
+	    align-items: center;
+	    text-align: initial;
+	    margin-bottom: 8px;
+	}
+
+	.card-info .card-thumbnail{
+		max-width: 150px;
+		margin-bottom: 0px!important;
+		margin: 0px 25px 0px 0px;
+	}
+
+	.card-description{
+		padding: 15px;
+	}
+
+	.card-description .discription {
+	    margin-top: 15px;
+	    padding-top: 12px;
+	}
+
+	.discription::after {
+	    width: 29px;
+	    height: 26px;
+	    left: 4px;
+	}
+
+	.header-left h2.title {
+    	font-size: 25px;
+	}
+
+	.header-right span {
+	    font-size: 20px;
+	    padding: 10px 15px;
+	}
+
+	.pricing-body p{
+		font-size: 17px;
+	}
+
+	.header-left span{
+		font-size: 16px;
+	}
+
+	.pricing-crtl{
+		padding: 30px;
+	}
+
+	.pricing-header{
+		padding-bottom: 15px;
+	}
+
+	.pricing-text {
+    	margin-top: 20px;
+	}
+
+	.pricing-text ul li i{
+		padding-right: 6px;
+		font-size: 16px;
+	}
+
+	.pricing-text ul li{
+		font-size: 16px;
+		margin-bottom: 8px;
+	}
+
+	.pricing-footer .pricing-btn{
+		padding: 20px 0px;
+	}
+
+	.pricing-menu ul li a{
+		padding: 25px 0px;
+	}
+}
+
+@media(max-width: 638px){
+	.about-cont-info ul li{
+		float: inherit;
+	}
+
+	.about-cont-info ul li:nth-child(even){
+		float: inherit;
+	}
+}
+
+@media(max-width: 614px){
+	.services-icon i {
+	    left: 43%;
+	}
+}
+
+@media(max-width: 575px){
+	.services-icon i {
+	    left: 41%;
+	}
+
+	.footer-content{
+		display: block;
+		text-align: center;
+	}
+
+	.footer-icon ul {
+	    width: 191px;
+	    margin: auto;
+	    padding-top: 19px;
+	}
+
+	.header-content h1{
+		margin-top: 15px;
+	}
+
+	.portfolio-menu-title h3{
+		font-size: 25px;
+	}
+
+	.modal-cloge-icon i {
+	    display: flex;
+	    position: fixed;
+	    right: 16px;
+	    top: 16px;
+	    border: 2px solid #fe320a;
+	    border-radius: 50px;
+	    width: 40px;
+	    height: 40px;
+	    font-size: 25px;
+	}
+
+	.resume {
+    	margin-bottom: 25px;
+	}
+
+	.resume-text p{
+		font-size: 17px;
+	}
+
+	.card-description .title-area{
+		display: block;
+	}
+
+	.rating {
+	    max-width: 109px;
+	    margin-top: 12px;
+	}
+
+	.card-info {
+	    display: block;
+	    text-align: center;
+	    margin-bottom: 8px;
+	}
+
+	.card-info .card-thumbnail {
+	    max-width: 100%;
+	    margin-bottom: 20px!important;
+   		margin: 0px 0px 0px 0px;
+	}
+
+	.owl-carousel-testimonial .owl-dots {
+	    bottom: -5.5%;
+	}
+
+	.owl-carousel-testimonial .owl-next {
+	    width: 27px !important;
+	    height: 30px !important;
+	    font-size: 20px !important;
+	    line-height: 24px !important;
+	    right: 0px;
+	}
+
+	.owl-carousel-testimonial .owl-prev{
+	    width: 27px !important;
+	    height: 30px !important;
+	    font-size: 20px !important;
+	    line-height: 24px !important;
+	    top: 5%;
+	    right: 0px;
+	}
+
+	.pricing-text ul li{
+		width: 100%;
+	}
+
+	.pricing-body p > br {
+    	display: none;
+	}
+
+	.pricing-ftr-text{
+		display: block;
+		text-align: center;
+	}
+
+	.single-cmt {
+    	padding: 7px 0px;
+	}
+
+	.pricing-footer .pricing-btn{
+		margin: 20px 0px;
+	}
+
+	.text-contant {
+	    margin-bottom: 25px !important;
+	    max-width: 350px;
+	    margin: auto;
+	}
+	
+	.mb-28 {
+    	margin-bottom: 53px;
+	}
+
+	.skill-item {
+   		padding: 0;
+	}
+}
+
+@media(max-width: 425px){
+	.services-icon i {
+	    left: 42%;
+	}
+
+	.port-modal-text-area h4{
+		font-size: 23px;
+	}
+
+	nav.main-menu .logo a img {
+	    max-width: 180px;
+	    height: auto;
+	}
+
+	.pricing-header{
+		display: block;
+	}
+
+	.header-left {
+    	margin-bottom: 20px;
+	}
+
+	.header-left h2.title {
+    	font-size: 21px;
+	}
+
+	.pricing-menu ul{
+		display: block;
+		border-radius: 10px;
+	}
+
+	.pricing-menu ul li{
+		width: 100%;	
+	}
+
+	.pricing-menu ul li:hover{
+		border-radius: 0;
+	}
+
+	.pricing-menu ul li:last-of-type {
+    		border-radius: 0px 0px 10px 10px;
+	}
+
+	.pricing-menu ul li:first-of-type {
+	    border-radius: 10px 10px 0px 0px;
+	}
+
+	.pricing-crtl {
+    	padding: 17px;
+	}
+
+}
+
+@media(max-width: 330px){
+	.services-icon i {
+	    left: 43%;
+	}
+
+	.about-cont-info ul li span label {
+	    margin-right: 0px;
+	    font-size: 15px;
+	    margin-left: 7px;
+	}
+
+	.port-featured-text {
+	    padding: 15px 0px 50px 5px;
+	}
+
+	.technology>ul>li {
+	    font-size: 13px;
+	    padding: 0px 6px;
+	    margin-bottom: 12px;
+	}
+}

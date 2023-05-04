@@ -1,0 +1,250 @@
+section.breadcrumb-wrap.single-page {
+    padding: 25px 0px;
+}
+.single-page-zoom {
+    position: relative;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+.product-label.zoon p{
+    width: 80px;
+}
+.xzoom-thumbs a{
+    text-decoration: none;
+}
+.xzoom-thumbs img{
+    display: inline-block;
+    width: 100%;
+    max-width: 107px;
+    height: auto;
+    border: 1px solid #ddd;
+}
+.xzoom-preview{
+    border: 1px solid #000;
+    box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.2);
+}
+.xzoom-gallery.active{
+    border: 1px solid #000 !important;
+}
+
+
+
+
+/******************************* Samari ******************************/
+section.single-page-wrap {
+    padding: 30px 0px 75px;
+}
+.products-star>ul>li{
+    display: inline-block;
+}
+.products-star>ul>li span{
+    font-size: 16px;
+    color: #ff4500;
+}
+.products-star>ul>li>a{
+    font-size: 12px;
+    color: #171718;
+    transition: all 0.5s ease;
+}
+.products-star>ul>li>a:hover{
+    color: #ff4500; 
+}
+.price-crtl.samari {
+    display: flex;
+    flex-wrap: wrap;
+    position: inherit;
+    padding-top: 20px;
+    transition: all 0.5s ease;
+}
+.price-crtl.samari p {
+    font-size: 20px;
+    color: #ff4500;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+}
+
+.products-title h2{
+    font-size: 22px;
+    margin: 10px 0;
+}
+.products-title p{
+    font-size: 16px;
+    font-style: italic;
+}
+.price-crtl.samari p del{
+    color: #171718;
+    padding-right: 15px;
+    font-size: 15px;
+}
+.buy-now a button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 0;
+    padding: 9px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background: #171718;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+.buy-now a button:hover{
+    background: #ff4500;
+}
+.button-tooltip a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #171718;
+    transition: all 0.5s ease;
+}
+.button-tooltip a i{
+    padding-right: 5px;
+}
+.button-tooltip a:hover{
+    color: #ff4500;
+}
+.products-samari-crtl {
+    padding-bottom: 25px;
+    border-bottom: 2px solid #ddd;
+}
+.product-meta{
+    padding-top: 20px;
+}
+.product-meta p{
+    font-size: 18px;
+    color: #171718;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+.product-meta p a{
+    color:  #171718;
+    padding-left: 5px;
+    transition: all 0.5s ease;
+}
+.product-meta p a:hover{
+    color: #ff4500;
+}
+.meta-content>ul>li {
+    display: inline-block;
+    margin-top: 15px;
+}
+.meta-content>ul>li>a{
+    display: block;
+    padding: 3px 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+.meta-content>ul>li>a.face{
+    background: #3b5998;
+}
+.meta-content>ul>li>a.twit{
+    background: #2caae1;
+}
+.meta-content>ul>li>a.pint{
+    background: #cb2027;
+}
+.meta-content>ul>li>a.link{
+    background: #0073b1;
+}
+.meta-content>ul>li>a:hover{
+    opacity: 0.7;
+}
+
+.single-page-text {
+    padding-top: 50px;
+}
+.single-page-text h3 {
+    font-size: 20px;
+    line-height: 42px;
+}
+.single-page-text p {
+    font-size: 17px;
+    font-weight: 500;
+}
+/******************************* Samari ******************************/
+
+section.related-products-wrap {
+    padding-bottom: 50px;
+}
+.related-products-title h3 {
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 29px;
+    font-weight: 600;
+}
+button.slick-custom-prev.slick-arrow,
+button.slick-custom-next.slick-arrow{
+    position: absolute;
+    z-index: 999;
+    left: 0%;
+    top: 45%;
+    border-radius: 50px;
+    width: 38px;
+    height: 38px;
+    font-size: 24px;
+    background: #171718;
+    color: #fff;
+    border: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+button.slick-custom-next.slick-arrow{
+    right: 0%;
+    left: auto;
+}
+button.slick-custom-prev.slick-arrow:hover,
+button.slick-custom-next.slick-arrow:hover{
+    background: #ff4500;
+}
+.products-wrap:hover button.slick-custom-prev.slick-arrow {
+    left: 1%;
+    opacity: 1;
+}
+.products-wrap:hover button.slick-custom-next.slick-arrow {
+    right: 1%;
+    opacity: 1;
+}
+.products-mr {
+    margin: 0px 5px;
+}
+
+
+button.zoom-img-left.slick-arrow, button.zoom-img-right.slick-arrow {
+    position: absolute;
+    z-index: 999;
+    left: 40%;
+    bottom: -46%;
+    border-radius: 50px;
+    width: 38px;
+    height: 38px;
+    background: transparent;
+    font-size: 24px;
+    color: #171718;
+    border: 0;
+    /* opacity: 0; */
+    transition: all 0.5s ease;
+}
+button.zoom-img-right.slick-arrow{
+    right: 40%;
+    left: auto;
+}
+@media(max-width: 767px){
+    .products-samari-wrap {
+        padding-top: 45px;
+    }
+    .breadcrumb-menu>ul>li>a{
+        font-size: 15px;
+    }
+}
+@media(max-width: 375px){
+    button.zoom-img-right.slick-arrow {
+        bottom: -50%;
+        right: 37% !important;
+    }
+    button.zoom-img-left.slick-arrow{
+        bottom: -50%;
+        left: 37% !important;
+    }
+}

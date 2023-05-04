@@ -1,0 +1,216 @@
+/***************Header section***************/
+header{
+    position: relative;
+	padding: 12.7px 0px;
+    background: #fff;
+    box-shadow: 0px 0px 5px #4444;
+    z-index: 2;
+}
+.header-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header-logo {
+    display: flex;
+}
+.menu-area {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header-logo a img{
+	height: 40px;
+	margin-right: 12px;
+}
+.nav-menu ul li{
+	display: table-cell;
+	padding-left: 9px;
+	padding-right: 9px;
+    padding-top: 8px;
+}
+.nav-menu ul li a{
+	color: rgba(0,0,0,.55);
+	font-size: 16px;
+	font-weight: 400;
+	transition: 0.6s;
+}
+.nav-menu ul li a:hover{
+	color: #191919;
+}
+.active-home{
+	color: #191919;
+}
+.search-area {
+    position: relative;
+    width: 300px;
+    margin-right: 50px;
+}
+.search-area input[type="search"] {
+    width: 100%;
+    font-weight: 400;
+    color: #212529;
+    font-size: 16px;
+    padding: .375rem .75rem;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    outline: none;
+    border-radius: 50px;
+}
+.search-area input[type="search"]:focus {
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+.search-area input[type="submit"] {
+    border-radius: 50px;
+    padding: 7px 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: var(--bs-orange);
+    border: 0;
+    color: #fff;
+}
+.search-area input[type="submit"]:focus{
+	box-shadow: 0 0 0 0.25rem rgb(25 135 84 / 50%);
+}
+
+.header-sociel-icon {
+    padding-top: 9px;
+}
+.header-sociel-icon a{
+    margin: 0 27px;
+}
+.header-sociel-icon a i{
+	font-size: 18px;
+    color: rgba(0,0,0,.55);
+}
+.header-sociel-icon a.cart-icon{
+	position: relative;
+}
+.header-sociel-icon .cart-icon-text{
+    position: absolute;
+    background: #DC3545;
+    width: 20px;
+    border-radius: 20px;
+    height: 19px;
+    right: 19.9%;
+    top: -12px;
+    text-align: center;
+    line-height: 21px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: italic;
+    padding-right: 3px;
+}
+.dropdown_menu {
+	position: relative;
+    padding-top: 9px;
+}
+.dropdown_menu a i{
+	font-size: 18px;
+	margin-left: 27px;
+    color: rgba(0,0,0,.55);
+}
+span.doen-icon i {
+    margin-left: 7px;
+    vertical-align: top;
+    font-size: 15px;
+    margin-right: 47px;
+}   
+.dropdown-menu-irem{
+	position: absolute;
+	width: 161px;
+	height: auto;
+	background: #fff;
+	padding: 6px 0;
+    border-radius: 5px;
+    top: 43px;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    display: none;
+}
+ul.dropdown-menu-irem.opener {
+    display: block;
+}
+.dropdown-menu-irem li{
+}
+.dropdown-menu-irem li a{
+    padding: 4px 0 4px 17px;
+    display: block;
+    width: 100%;
+    color: #000;
+    font-size: 16px;
+    transition: 0.6s;
+}
+.dropdown-menu-irem li a:hover{
+	background: #E9ECEF;
+}
+
+/***************Header section end***************/
+ 
+ /*========================Header--section The end====================*/
+.humberger {
+  cursor: pointer;
+  display: none;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: red;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.hiead-menu{
+    display: none;
+}
+/*=========================Rediyes===========================*/
+
+ @media(max-width: 767px){
+    .hiead-menu.header2 {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        background: #fff;
+        padding-left: 27px;
+        height: 100vh;
+        bottom: 0;
+    }
+    .hiead-menu {
+        display: block;
+    }
+    .nav-menu.none.opener,
+    .menu-area.none.opener{
+         display: none;
+   }
+   .humberger{
+        display: block;
+    }
+   .menu-area,
+   .nav-menu{
+        display: none;
+   }
+   .menu-area.opener,
+   .nav-menu.opener{
+         display: block;
+   }
+   .nav-menu ul li{
+    display: block;
+   }
+}
